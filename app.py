@@ -161,12 +161,12 @@ app.layout = html.Div([
 
         html.Div([
             html.H1("CIE Marks", style={"fontSize": '30px'}),
-            dcc.Graph(figure = fig, style={"height": "400px",'width': "100%"})
+            dcc.Graph(figure = fig,responsive=True, style={"height": "400px",'width': "100%",'magintop': "2000px",'paddingtop': "200px"})
         ], style={"padding": "20px", "flex": "1"}),
         
     html.Div([
         html.H1("Skill Distribution", style={"fontSize": '30px'}),
-            dcc.Graph(figure=pie_graph,style={"height": "400px",'width': "100%", "marginTop": "20px"})
+            dcc.Graph(figure=pie_graph,responsive=True,style={"height": "400px",'width': "100%", "marginTop": "20px"})
                 ], style={"padding": "20px", "flex": "1"})
    
     ], style={"display": "flex", "minHeight": "90vh"}),
